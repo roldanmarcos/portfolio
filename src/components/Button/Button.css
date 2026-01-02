@@ -1,0 +1,21 @@
+.button {
+    background-color: var(--button-bg);
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    color: var(--button-tx);
+    padding: 8px 15px;
+}
+
+.button:hover {
+    background-color: rgb(26, 26, 26);
+}
+
+.buttonFixed {
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  padding: 8px 15px;
+}

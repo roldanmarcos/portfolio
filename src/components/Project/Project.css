@@ -1,0 +1,97 @@
+.project {
+    width: 100%;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 5px solid white;
+    box-shadow: 0 1px 10px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 768px) {
+  .project {
+    width: auto;
+  }
+}
+
+.project:hover {
+  box-shadow: 0px 0px 4px  #00000026;
+}
+
+.photoProject {
+    position: relative;
+    height: 180px;
+    width: 100%;
+    background-color: azure;
+    border-radius: 3px;
+}
+
+.photoProject img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: cover;
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 50%, rgba(0,0,0,0) 100%);
+    mask-repeat: no-repeat;
+    mask-size: cover;
+}
+
+.project .overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height:40%;
+  background: linear-gradient(to top, rgba(240,240,240,1), rgba(240,240,240,0));
+  backdrop-filter: blur(1px);
+  pointer-events: none;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  
+  background-color: rgba(0, 0, 0, 0.582);
+
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modalContent{
+  background-color: rgb(252, 254, 253);
+  width: 70%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.nameProject {
+  font-size: 12px;
+  font-weight: 500;
+  text-align: left;
+  background: linear-gradient(to bottom, rgba(240,240,240,1), rgb(240, 240, 240));
+  backdrop-filter: blur(1px);
+  padding: 10px 0;
+  padding-left: 10px;
+  color: black;
+}
+
+@media (max-width: 600px) {
+  .modalContent{
+    width: 70%;
+    height: auto;
+  }
+}

@@ -1,0 +1,29 @@
+.switchButton {
+  width: 37px;
+  height: 21px;
+  background-color: #ccc;
+  border-radius: 13px;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.switchButton.active {
+  background-color: white;
+}
+
+.switchCircle {
+  width: 13px;
+  height: 13px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  transition: transform 0.3s ease;
+}
+
+.switchButton.active .switchCircle {
+  transform: translateX(17px);
+  background-color: #252525;
+}

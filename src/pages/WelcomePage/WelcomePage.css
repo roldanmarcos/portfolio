@@ -1,0 +1,28 @@
+.welcomePage {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profilesContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+
+@media (max-width: 500px) {
+    .profilesContainer {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+.logowelcome{
+    width: 8%;
+}

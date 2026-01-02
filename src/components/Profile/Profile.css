@@ -1,0 +1,25 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    
+}
+
+.iconProfile {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    border: 2px solid #3b3b3b;
+}
+
+.iconProfile img{
+    width: 70%;
+    height: 70%;
+    object-fit: fill;
+}
