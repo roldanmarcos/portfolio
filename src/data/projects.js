@@ -31,7 +31,7 @@ export const projects = [
     description: 'Interactive game of visual memory.', 
     skills: ['Javascript', 'HTML', 'CSS', 'React', 'React Native'], 
     photo: memorytest, 
-    link: 'https://github.com/roldanmarcos/mercadolibre'},
+    link: 'https://github.com/roldanmarcos/memotest'},
 
     { id: 'Guarda Ropas',
     name: 'Guarda Ropas', 
