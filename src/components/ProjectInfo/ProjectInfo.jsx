@@ -17,7 +17,7 @@ const ProjectInfo = ({ project }) => {
                         <li key={index} className="skillItem">{skill}</li>
                     ))}
                 </ul>
-                <Button text='Ver repositorio' link={project.link} variant="fixed"/>
+                <Button text='Repository' link={project.link} variant="fixed"/>
             </div>
         </div>
     );
